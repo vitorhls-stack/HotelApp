@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HotelApp.Views.Sobre"
+             Title="Sobre"
+             BackgroundColor="{StaticResource Gray100}">
+
+    <VerticalStackLayout VerticalOptions="CenterAndExpand"
+                         Padding="10"
+                         Spacing="10">
+
+        <Label Text="Sobre o Aplicativo"
+       FontFamily="Rye"
+       FontSize="40"
+       TextColor="{StaticResource Primary}" />
+
+        <Frame Padding="15">
+            <VerticalStackLayout Spacing="12">
+
+                <Label Text="Hotel App"
+                       TextTransform="Uppercase"
+                       FontSize="Subtitle"
+                       TextColor="{StaticResource Primary}" />
+
+                <Label Text="Aplicativo para cálculo e contratação de hospedagem, permitindo informar hóspedes, suíte e período da estadia." />
+
+                <Label Text="Desenvolvedor:"
+                       FontAttributes="Bold" />
+                <Label Text="Vitor Hugo de Lima Serra" />
+
+                <Label Text="Meu GitHub:"
+                       FontAttributes="Bold" />
+                <Label Text="vitorhls-stack" />
+
+                <Label Text="Ano:"
+                       FontAttributes="Bold" />
+                <Label Text="2026" />
+
+                <Button Text="Voltar"
+                        Clicked="OnVoltarClicked" />
+
+            </VerticalStackLayout>
+        </Frame>
+
+    </VerticalStackLayout>
+
+</ContentPage>
